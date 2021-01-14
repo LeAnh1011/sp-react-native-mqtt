@@ -39,10 +39,10 @@ export class IMqttClient {
 	isConnected(): Promise<boolean>;
 }
 
-declare namespace mqtt {
+declare namespace MQTT {
 	function createClient(options: { uri: string, clientId?: string }): Promise<IMqttClient>;
 	function removeClient(client: IMqttClient): void;
 	function disconnectAll(): void;
 }
 
-export default mqtt;
+export default MQTT;
