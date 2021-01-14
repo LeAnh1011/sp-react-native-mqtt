@@ -1,6 +1,6 @@
-export type QoS = 0 | 1 | 2;
+declare type QoS = 0 | 1 | 2;
 
-export class IMqttClient {
+declare class IMqttClient {
 	constructor(options: {
 		clientId: string;
 		uri: string;
